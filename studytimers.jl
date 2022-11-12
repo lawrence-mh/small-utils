@@ -1,6 +1,11 @@
 module StudyTimers
 using WAV
 #the wav package must be installed: https://juliapackages.com/p/wav
+#A simple timer for study.
+#On your terminal, run: $julia StudyTimers.jl
+#and then input, say, 5, to have 5 minutes of rest before the program beeps;
+#or input, say, 30, to have 30 minutes of study before the program beeps.
+
     function TonePlayer()
         # println("\007\007\007\007\007\007")
         fs = 7e3
