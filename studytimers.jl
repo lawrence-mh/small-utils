@@ -1,5 +1,6 @@
 module StudyTimers
 using WAV
+#the wav package must be installed: https://juliapackages.com/p/wav
     function TonePlayer()
         # println("\007\007\007\007\007\007")
         fs = 7e3
