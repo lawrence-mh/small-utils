@@ -19,9 +19,9 @@ function TonePlayer()
     fs = 6e3                    # sampling frequency / number of samples per second in a beep
     t = 0.0:1/fs:prevfloat(1.0) # time range (with steps) of a beep; 1/fs: the interval between the samples.
     f = 8e2                     # frequency in Hz (X cycles in 1 second)
-    a = 0.1                     # amplitude 
+    a = 0.7                     # amplitude 
     y = sin.(2pi * f * t) * a 
-    for i = 1:10
+    for i = 1:6
         wavplay(y, fs) 
     end
 end
